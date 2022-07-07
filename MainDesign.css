@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* CSS Document */
+
+/* body */
+body {
+	background-color: aliceblue;
+	width:100%;
+	height:100%;
+	font-style: normal;
+	font-weight:400;
+	overflow-x: hidden;
+}
+
+/* header */
+header {
+	align: center;
+	text-align: center;
+	align-content: center;
+	height: 30%;
+}
+
+header > p{
+	color: #8B8B8B;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 8%;
+	font-weight: 400;
+}
+header > img {
+	align-content: center;
+	display: inline-block;
+	width: auto;
+	margin-top: 15px;
+}
+header > h2 {
+	font-family: 'Limelight', cursive;
+	margin-top: 20px;
+	color: #525252;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.invisible {
+	text-align: center;
+}
+
+/* section */
+section{
+	justify-content: center;
+	align: center;
+	margin-top: 125px;
+	text-align: center;
+}
+span{
+	font-family: 'Abril Fatface', cursive;
+	align: center;
+	font-size: 120px;
+	text-align: center;
+	margin-left: 15px;
+}
+
+a:link {text-decoration: none; color: black;}
+a:visited {text-decoration: none; color: black;}
+a:active {text-decoration: none; color: black;}
+
+#code{
+	color: black;
+}
+#think{
+	color: black;
+}
+#about{
+	color: black;
+}
+
+/* footer */
+footer{
+	padding: 0% 30% 0% 30%;
+	margin-top: 190px;
+	margin-bottom: 100px;
+}
+footer > a {
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	margin: 0px 15px 0px 15px;
+}
+footer > a :hover{
+	text-decoration: none; color: #999999;
+}
+footer>a>p{
+	color:#606060;
+	margin: 5px 0px 5px 0px;
+}
