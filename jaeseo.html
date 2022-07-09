@@ -5,33 +5,231 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"> <style> div>span { font-family: 'Abril Fatface', cursive; }
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap"> <style> div>span { font-family: 'Rajdhani', sans-serif;; } </style>
+	
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
 .bgimg {
-  background-image: url('images/background.jpg');
-  min-height: 100%;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("images/mainpic.jpg");
+  min-height: 100%;
 }
 </style>
 </head>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    D-30
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">SEE YOU SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">재서의 잡동사니 연구소</p>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Jaeseo Yook</b></h1>
+    <p>재서의 잡동사니연구소에 오신 것을 환영합니다.</p>
+    <img src="images/mainpic.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="images/mainpic.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <a href="https://youtu.be/X1_4DomPMss" target="_blank"><p class="w3-button w3-light-grey w3-padding-large w3-margin-top"> Welcome to Jaeseo's Anything Laboratory. </p></a>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Traces</h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="images/cinema.jpg" style="width:100%">
+        <img src="images/model1.jpg" style="width:100%">
+        <img src="images/camera.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="images/okinawa1.jpg" style="width:100%">
+        <img src="images/okinawa2.jpg" style="width:100%">
+        <img src="images/value.jpg" style="width:100%">
+        <img src="images/model2.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    by <a href="https://www.instagram.com/@anything_lab" target="_blank">@anything_lab</a>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>It's Me Jaeseo</h2>
+    <hr class="w3-opacity">
+    <p>찢어지게 몰상식하고 반사회적인 재서예요. 매일 꿈 꾸고, 사랑과 유흥을 쫓아다녀요. "재서는 왜 그러고 살아?"라는 흉기로 자주 맞아봤어요. 심지어 나조차도 내 나잇값을 의심하곤 하지요. 내가 나답기 위해 춤 추고 글 쓰는데, 왜 이리 복잡한 계산이 필요한 걸까요? <br/>
+	깨지기 쉬운 이 모습이 언제까지 지속될지 모르겠지만, 아직은 당신과 함께 더 꿈꿔보고자 이렇게 대화를 청해보아요. 저와 함께 몽글몽글하고 재밌는 미래를 만들어보시겠어요? <br/><br/>혹시라도, 우리의 작당모의가 밥벌이가 되고 삶이 될지도 모른다는 부당한 기대를 품고서.
+<br/><br/>
+	This is Jaeseo, weird and strange. I dream fancy things every day and chase after love and excitement. "Why does Jaeseo live that way?" Some people worry. Sincerely, even I worry about my dreamy behavior. I know things will be more complicated to keep my own life style.<br/>
+	This fragile condition may break up someday, but still I wanna dream with you. I wanna love and joy with you long time. So this time, I ask you to take my hands. Would you make worthwhile projects with me? Unless it's an unreasonable expectation, those could be our occupation if things go well!
+	
+    </p>
+    <h2 class="w3-padding-32">My Excitement</h2>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">Today's Main Work</div>
+    </div>
+    <p class="w3-wide">Writing And Reading</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">Familiar With Literature</div>
+    </div>
+    <p class="w3-wide">Civil Activism</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">The Most Important</div>
+    </div><br>
+
+    <div class="w3-center w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section font">
+        <span class="w3-xlarge">Socialogy</span><br>
+        major
+      </div>
+      <div class="w3-quarter w3-section font">
+        <span class="w3-xlarge">Teacher</span><br>
+        my ex-job
+      </div>
+      <div class="w3-quarter w3-section font">
+        <span class="w3-xlarge">Web Front-End</span><br>
+        studying
+      </div>
+      <div class="w3-quarter w3-section font">
+        <span class="w3-xlarge">Listening</span><br>
+        take Effort to
+      </div>
+    </div>
+
+    <button style="display:hidden;" class="w3-button w3-padding-large w3-section">
+    </button>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24" style="margin-top:50;">Loving Friends</h3>
+    <img src="images/icon1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">"미래가 기대되는 사람"</span> - 그윽한 늑대 曰</p>
+    <p>네가 나중에 뭐를 하고 있을지 궁금하더라. 보통 그런 생각이 떠오르는 사람이 없거든. 근데(그런데) 너는 뭔가 글이란 매체로 표현하고 그런 삶을 살 것 같아서 (...) 상상을 해봤지. </p><br>
+   
+    <img src="images/icon2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">"투명하고 예리함"</span> - 똑똑한 사랑꾼 曰</p>
+    <p>너의 투명하고 솔직한 모습에 감탄하고 동경해.</p><br>
+    
+    <img src="images/icon3.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">"상상도 못할만큼 멋있어"</span> - 맑고 순한 예술가 曰</p>
+    <p>질문과 고마움을 전하는 일은 자신을 사랑하는 일이기도 하고, 그럴 수 있는 힘을 가진 재서가 당당히 살아낼 하루들을 감히 확신해.</p><br>
+	  
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16">My Proposal</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Be The Model</li>
+          <li class="w3-padding-16">야외촬영</li>
+          <li class="w3-padding-16">상호무페이</li>
+          <li class="w3-padding-16">보정 사진 제공</li>
+          <li class="w3-padding-16">입문자 가능</li>
+          <li class="w3-padding-16">
+            <h2>$ 0</h2>
+            <span class="w3-opacity">for free</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+          <a href="mailto:jari26@kakao.com"> <button class="w3-button w3-white w3-padding-large w3-hover-black">Let's Interview</button> </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Anything With Me</li>
+          <li class="w3-padding-16">웹개발 공부</li>
+          <li class="w3-padding-16">글 쓰고 글 읽기</li>
+          <li class="w3-padding-16">시민사회 연대활동</li>
+          <li class="w3-padding-16">즐겁고 의미 있는 새로운 프로젝트 제안</li>
+          <li class="w3-padding-16">
+            <h2> ♪ </h2>
+            <span class="w3-opacity">nothing in need</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <a href="mailto:jari26@kakao.com"><button class="w3-button w3-white w3-padding-large w3-hover-black">Knock On Me</button></a>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+  <!-- End About Section -->
   </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+	  <h2>Contact</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Seoul, South Korea</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 010-2494-2920</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jari26@kakao.com</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <img src="images/okinawa3.jpg" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+	  
+	<h2>Curious 'bout Me?</h2>
+   
+    <p>I'm so excited to be with you! I welcome anybody, anything.</p>
+	<a href="mailto:jari26@kakao.com">  <button style="margin-top:25px;" class="w3-button w3-padding-16 w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button></a>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+   <a href="https://www.facebook.com/Yuk.Jaeseo/" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+   <a href="https://www.instagram.com/anything_lab" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+	  <p class="w3-medium">Copyright by <a class="w3-hover-text-green">Jaeseo Yook</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
 </div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 </body>
 </html>
